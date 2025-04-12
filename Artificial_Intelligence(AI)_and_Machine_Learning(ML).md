@@ -21,7 +21,7 @@
 * Model Layer - implement a model and train it.  
 * Application Layer - how to serve the model, and its capabilities for your users.  
 
-***Insert slide 131 as example***  
+![AI Components](./Photos/AI%20Components.png)   
 
 # What is Machine Learning (ML)?  
 * ML is a type of AI for building methods that allow machines to learn.  
@@ -34,7 +34,7 @@
 * Process more complex patterns in the data than traditional ML.  
 * Deep Learning because there’s more than one layer of learning (input layer, hidden layer, output layer).  
 
-***Insert slide 135 as example***  
+![Deep Learning (DL)](./Photos/Deep%20learning.png)   
 
 * Ex: Computer Vision - image classification, object detection etc.  
 * Ex: Natural Language Processing (NLP) - text classification, sentiment analysis, machine translation, language generation.  
@@ -45,7 +45,7 @@
 # What is Generative AI (Gen-AI)?  
 * A subset of DL.  
 
-***Insert slide 137 as example***  
+![Generative AI](./Photos/What%20is%20GEN%20AI.png)   
 
 * It is a Multi-purpose foundation models backed by neural networks.  
 * They can be fine-tuned if necessary to better fit our use-cases.  
@@ -64,7 +64,7 @@
 * Does NOT create a single type of output.  
 * Example: a multi-modal can take a mix of audio, image and text and output a mix of video, text for example.  
 
-***Insert slide 141 as example***  
+![Multi-modal Models](./Photos/Multi%20Model%20.png)  
 
 # Humans are a mix of AI  
 * Sometimes we know “if this happens, then do that” = (AI)  
@@ -90,16 +90,14 @@
 * Labeled data  
     - Data include both input features and corresponding output labels. 
     - Example : dataset with images of animals where each image is labeled with the corresponding animal type (e.g., cat, dog).  
-    - Use case: <mark>Supervised Learning</mark>, where the model is trained to map inputs to known outputs.  
-
-***Insert slide 145 as example***  
+    - Use case: <mark>Supervised Learning</mark>, where the model is trained to map inputs to known outputs.   
 
 * Unlabeled data  
     - Data includes only input features without any output labels. 
     - Example: a collection of images without any associated labels.  
     - Use case: <mark>Unsupervised Learning</mark>, where the model tries to find patterns or structures in the data.  
 
-***Insert slide 145 as example***  
+![Labeled Data vs Unlabeled Data](./Photos/Labelled%20and%20Unlabelled.png)  
 
 ## Structured Data  
 * Data is organized in a structured format, often in rows and columns (like Excel).  
@@ -107,13 +105,13 @@
     - Data is arranged in a table with rows representing records and columns representing features.  
     - Example: customers database with fields such as name, age, and total purchase amount.  
 
-***Insert slide 146 as example***  
+![Structured Data](./Photos/Structured%20Data.png)  
 
 * Time Series Data   
     - Data points collected or recorded at successive points in time.  
     - Example: Stock prices recorded daily over a year.  
 
-***Insert slide 146 as example***  
+![Time Series Data](./Photos/Time%20Series%20Data.png) 
 
 ## Unstructured Data  
 * Data that doesn't follow a specific structure and is often text-heavy or multimedia content.  
@@ -128,7 +126,7 @@
 * Needs labeled data.  
 * Learn a mapping function that can predict the output for new unseen input data.  
 
-***For regression and classification example insert slide 148***  
+![v](./Photos/Regression%20and%20Classification.png) 
 
 ## Supervised Learning - Regression
 * Used to predict a numeric value based on input data.  
@@ -139,6 +137,8 @@
     - Stock Price Prediction - predicting the future price of a stock based on historical data and other feature.  
     - Weather Forecasting - predicting temperatures based on historical weather data.  
 
+![Supervised Learning - Regression](./Photos/Supervised%20Learning%20–%20Regression.png)
+
 ## Supervised Learning - Classification  
 * Used to predict the categorical label of input data.  
 * The output variable is <mark>discrete</mark>, which means it falls into a specific category or class.  
@@ -147,6 +147,8 @@
     - Binary Classification - classify emails as "spam" or "not spam".  
     - Multiclass Classification - classify animals in a zoo as "mammal," "bird," "reptile”.  
     - Multi-label Classification - assign multiple labels to a movie, like "action" and "comedy".  
+
+![Supervised Learning - Classification](./Photos/Supervised%20Learning%20–%20Classification.png)  
 
 # Training vs. Validation vs. Test Set  
 * Training Set  
@@ -159,7 +161,7 @@
     - Used to evaluate the final model performance.  
     - Percentage: typically, 10-20% of the dataset.  
 
-***Insert slide 150 as an example***  
+![Training vs. Validation vs. Test Set](./Photos/Training%20vs%20Validation%20vs%20Test%20.png) 
 
 # Feature Engineering  
 * The process of using domain knowledge to select and transform raw data into meaningful feature.  
@@ -171,7 +173,7 @@
     - Feature Selection - selecting a subset of relevant features, like choosing important predictors in a regression model.  
     - Feature Transformation - transforming data for better model performance, such as normalizing numerical data.  
 
-***Insert slide 152 as an example***  
+![Feature Engineering](./Photos/Feature%20Engineering.png)  
 
 # ML Algorithms – Unsupervised Learning  
 * The goal is to discover inherent patterns, structures, or relationships within the input data.  
@@ -182,7 +184,7 @@
 * Used to group similar data points together into clusters based on their features.  
 * Outcome: The company can target each segment with tailored marketing strategies.  
 
-***Insert slide 155  as an example***   
+![Unsupervised Learning – Clustering Technique](./Photos/Clustering%20Technique.png)     
 
 ## Unsupervised Learning – Association Rule Learning Technique  
 * Here we want to understand which products are frequently bought together in supermarket.  
@@ -253,7 +255,7 @@
 ## Balanced  
 * Neither overfitting or underfitting.  
 
-***Insert slide 169 as an example***   
+![Overfitting vs Underfitting vs Balanced](./Photos/Model%20Fit.png)   
 
 # Bias and Variance  
 ## Bias  
@@ -266,7 +268,7 @@
     - Use a more complex model.  
     - Increase the number of features in data.  
 
-***Insert slide 170 as an example***  
+![High Bias](./Photos/High%20Bias.png)  
 
 ## Variance  
 * How much the performance of a model changes if trained on a different dataset which has a similar distribution.  
@@ -277,18 +279,22 @@
     - Feature selection (less, more important features).  
     - Split into training and test data sets multiple times.  
 
-***Insert slide 171 as an example***  
+![High Variance](./Photos/High%20Variance.png)  
 
 <mark> Overfitting = High Variance  
 Underfitting = High Bias  
 Balanced = Low Bias, Low Variance </mark>
 
-***Insert slide 172, 173 as an example***   
+![Bias and Variance](./Photos/Bias%20and%20Var%201.png)  
+![Bias and Variance](./Photos/Bias%20and%20Var%202.png)  
 
-# Model Evaluation Metrics  
+# Model Evaluation Metrics
+
+![Binary Classification](./Photos/Binary%20Classification.png)  
+
 ## Confusion Matrix  
 
-***Insert slide 174, 175 as an example***  
+![Confusion Matrix](./Photos/Confusion%20Matrix.png)  
 
 * True Positive = It means the predicted value is positive (spam) and the actual value was positive (spam).
     - It means we predicted it to be a spam and actually it was a spam
@@ -308,7 +314,7 @@ Balanced = Low Bias, Low Variance </mark>
 * Value from 0 to 1 with 1 being perfrct model.  
 * AUC-ROC shows what the curve for true positive compared to false positive looks like at various thresholds.  
 
-***Insert slide 177 as an example***  
+![AUC-ROC](./Photos/AUC-ROC.png)    
 
 ## Model Evaluation – Regressions Metrics  
 * MAE = Mean Absolute Error between predicted and actual values.  
@@ -332,7 +338,7 @@ Balanced = Low Bias, Low Variance </mark>
 
 # Phases of Machine Learning Project  
 
-***Insert slide 183 as an example***  
+![Phases of Machine Learning Project](./Photos/Phases%20of%20Machine%20Learning%20Project.png)  
 
 * Define business goals  
     - Stakeholders define the value, budget and success criteria.  
